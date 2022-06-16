@@ -99,15 +99,18 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const amazonDiv = entry.target.querySelector('.amazon-div');
       const diceDiv = entry.target.querySelector('.dice-div');
+      const linkDiv = entry.target.querySelector('.linkedin-div');
       
     
       if (entry.isIntersecting) {
         amazonDiv.classList.add('move-up');
         diceDiv.classList.add('move-up');
+        linkDiv.classList.add('move-up');
         return; // if we added the class, exit the function
       }
       amazonDiv.classList.remove('move-up');
       diceDiv.classList.remove('move-up');
+      linkDiv.classList.remove('move-up');
     });
   });
 
@@ -181,12 +184,4 @@ const observer = new IntersectionObserver(entries => {
 
 
 
-// const intro = document.querySelector('#intro');
-// const int1 = document.querySelector('intro-one');
-
-// window.addEventListener('scroll', function() {
-//     if (intro.scrollTop > 0) {
-//       int1.classList.add('move-left');
-//     }
-// })
   

@@ -614,20 +614,21 @@ transform:rotate(360deg);
 
 .projects-one {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
-.dice-page {
+.dice-page, .amazon-page, .linkedin-page {
     width: 400px;
     transition: width 0.5s linear;
 }
 
-.amazon-page {
-    width: 400px;
-    transition: width 0.5s linear;
+.linkedin-page {
+    height: 195px;
 }
 
-.amazon-div, .dice-div {
+
+.amazon-div, .dice-div, .linkedin-div {
     padding: 15px;
     background-color: #005f69;
     border-radius: 10px;
@@ -646,12 +647,12 @@ transform:rotate(360deg);
         flex-direction: column;
     }
 
-    .amazon-div, .dice-div{
+    .amazon-div, .dice-div, .linkedin-div{
         width: 280px;
         margin-left: 100px;
     }
 
-    .amazon-page, .dice-page {
+    .amazon-page, .dice-page, .linkedin-page {
         height: 100px;
         width: 250px;
     }
@@ -660,6 +661,9 @@ transform:rotate(360deg);
         width: 255px !important;
     }
     .amazon-page:hover{
+        width: 255px !important;
+    }
+    .linkedin-page:hover{
         width: 255px !important;
     }
     
@@ -677,6 +681,12 @@ transform:rotate(360deg);
 }
 
 .amazon-page:hover {
+    width: 410px;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-page:hover {
     width: 410px;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
