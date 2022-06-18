@@ -100,17 +100,20 @@ const observer = new IntersectionObserver(entries => {
       const amazonDiv = entry.target.querySelector('.amazon-div');
       const diceDiv = entry.target.querySelector('.dice-div');
       const linkDiv = entry.target.querySelector('.linkedin-div');
+      const whatsDiv = entry.target.querySelector('.whatsapp-div');
       
     
       if (entry.isIntersecting) {
         amazonDiv.classList.add('move-up');
         diceDiv.classList.add('move-up');
         linkDiv.classList.add('move-up');
+        whatsDiv.classList.add('move-up');
         return; // if we added the class, exit the function
       }
       amazonDiv.classList.remove('move-up');
       diceDiv.classList.remove('move-up');
       linkDiv.classList.remove('move-up');
+      whatsDiv.classList.remove('move-up');
     });
   });
 
